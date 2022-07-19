@@ -18,7 +18,8 @@ public:
 	Auto(const std::string& make, const std::string& model);
 
 	// will be modified to support polymorphism
-	void print() const; 
+	// virtual function: key building block for polymorphism 
+	virtual void print() const; 
 
 	// operators are not inherited by child class, 
 	// but child class object can be used as parent object type. (a child object is-a parent object)

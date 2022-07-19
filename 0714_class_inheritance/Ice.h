@@ -10,8 +10,8 @@ public:
 	Ice() = delete; 
 	Ice(const std::string& make, const std::string& model, int numCylinders, int numGears); 
 
-	// redefine print function here
-	void print() const;
+	// override print function here
+	void print() const override;
 
 	friend std::ostream& operator << (std::ostream& o, const Ice& ice); 
 };

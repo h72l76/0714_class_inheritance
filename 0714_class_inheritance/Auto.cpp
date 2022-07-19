@@ -21,7 +21,7 @@ void Auto::print() const
     std::cout << "============================" << std::endl;
     std::cout << "make: " << _make << std::endl;
     std::cout << "model: " << _model<< std::endl;
-    std::cout << "============================" << std::endl;
+    std::cout << "============================" << std::endl << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& o, const Auto& automobile)
