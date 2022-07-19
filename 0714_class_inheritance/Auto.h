@@ -17,6 +17,7 @@ public:
 	Auto() = delete; 
 	Auto(const std::string& make, const std::string& model);
 
+	// will be modified to support polymorphism
 	void print() const; 
 
 	// operators are not inherited by child class, 

@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="0714_class_inheritance.cpp" />
     <ClCompile Include="Auto.cpp" />
+    <ClCompile Include="EV.cpp" />
     <ClCompile Include="Ice.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h" />
+    <ClInclude Include="EV.h" />
     <ClInclude Include="Ice.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

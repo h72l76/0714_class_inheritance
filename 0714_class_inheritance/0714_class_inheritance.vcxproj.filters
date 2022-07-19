@@ -24,12 +24,18 @@
     <ClCompile Include="Ice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Ice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EV.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

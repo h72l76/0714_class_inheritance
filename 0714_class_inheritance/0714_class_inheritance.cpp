@@ -4,29 +4,26 @@
 #include <iostream>
 #include "Auto.h"
 #include "Ice.h"
+#include "EV.h"
 
 int main()
 {
 	Auto a1{ "Chevy", "volt" };
 
-	//std::cout << a1 << std::endl;
-
-	// cannot access protected members from outside
-	//auto s = a1._make; 
-
 	Ice ice1{ "Ford", "focus", 4, 6 }; 
 
-	ice1.Auto::print();
+	EV ev1{ "chevy", "blazer ev", 80, 280 };
 
-	ice1.print(); 
+	std::cout << "1. \n";
+	a1.print();		// calling print function defined in Auto class 
 
+	std::cout << "2. \n";
+	ice1.Auto::print();		// calling print fucntion defined in Auto class, which is inherited by ICE class 
 
+	std::cout << "3. \n";
+	ice1.print();	// calling print function (re)defined in ICE class 
 
-	//std::cout << ice1.getMake() << " " << ice1.getModel() << std::endl;
-
-	// is-a 
-	//std::cout << static_cast<Auto>(ice1) << std::endl;
-	//std::cout << ice1 << std::endl;
-
+	std::cout << "4. \n";
+	ev1.print();	// calling print function defined in Auto class, which is inherited by EV class
 }
 

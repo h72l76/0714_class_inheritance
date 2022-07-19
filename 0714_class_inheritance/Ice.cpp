@@ -8,7 +8,7 @@ Ice::Ice(const std::string& make, const std::string& model, int numCylinders, in
 void Ice::print() const
 {	
 	std::cout << "printing from ICE class: " << std::endl;
-	Auto::print(); 
+	Auto::print();		// make sure to have Auto:: scope to prevent accidental recursion
 	std::cout << "num of cylinders: " << _numCylinders << std::endl;
 	std::cout << "num of gears: " << _numGears << std::endl;
 
