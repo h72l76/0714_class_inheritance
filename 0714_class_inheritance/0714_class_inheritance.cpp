@@ -38,3 +38,6 @@ void print(const Auto& a)
 {
 	a.print(); 
 }
+
+
+
